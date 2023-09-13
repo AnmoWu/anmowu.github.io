@@ -4,8 +4,8 @@ date: {{ .Date }}
 slug: ""
 description: ""
 keywords: []
-draft: true
+draft: false
 tags: []
-math: false
+math: true
 toc: false
 ---
