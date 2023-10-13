@@ -32,3 +32,5 @@ toc: false
 
 
 <input type="radio"/><label>标题的触发，离开页面标题产生相应变化</label>
+
+<span style="color: #9013fe; background-color: #f2e3ff;"> Welcome to my original sanctum sanctorum. </span>

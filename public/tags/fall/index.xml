@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>🌻Chilling...</title>
-    <link>https://anmowu.github.io/</link>
-    <description>Recent content on 🌻Chilling...</description>
+    <title>Fall on 🌻Chilling...</title>
+    <link>https://anmowu.github.io/tags/fall/</link>
+    <description>Recent content in Fall on 🌻Chilling...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year} Anmo</copyright>
-    <lastBuildDate>Tue, 10 Oct 2023 14:54:10 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Oct 2023 14:54:10 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/tags/fall/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>九月总结</title>
       <link>https://anmowu.github.io/blog/septemberfor2023/</link>
@@ -46,37 +46,6 @@
 现在探索了情人大道（？）两侧半荒废的小公园后——很可惜当时买的莫斯半球。要是提早发现，死的就是这里的金鱼藻和黄花水龙，而不是远道而来的你了。或者延后时间线，我也会把你放归这里，而不是在锥形玻璃罐里干渴而亡&amp;hellip;忏悔！
 南无阿弥多婆夜 哆他伽多夜 哆地夜他 阿弥唎都婆毗 阿弥唎哆 悉耽婆毗 阿弥唎哆 毗迦兰帝 阿弥唎哆 毗迦兰多 伽弥腻 伽伽那 枳多迦唎 娑婆诃
 感谢Christine Padesky&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
-    </item>
-    
-    <item>
-      <title>💜Wait for Better Days</title>
-      <link>https://anmowu.github.io/life/wait-for-betterdays/</link>
-      <pubDate>Mon, 11 Sep 2023 19:06:13 +0800</pubDate>
-      
-      <guid>https://anmowu.github.io/life/wait-for-betterdays/</guid>
-      <description>“All I do is sit around and wait for better days🎶”</description>
-    </item>
-    
-    <item>
-      <title>New Start🟪</title>
-      <link>https://anmowu.github.io/blog/brand-new-start/</link>
-      <pubDate>Mon, 11 Sep 2023 14:54:10 +0800</pubDate>
-      
-      <guid>https://anmowu.github.io/blog/brand-new-start/</guid>
-      <description>第一篇博客，还没部署到服务器上，搭建好主题就写的。
-不怎么复杂，只觉得迟。
-这里记录框架使用中遇见的问题和想法：
-标签不可以加emoji，在blogs界面样式太难看，把计数做成指数样式 description不显示 cover不显示 音乐播放器 slug、keyword、toc、math分别有什么用？ Markdown转HTML不兼容checkbox，需要重写css加入加入样式 图片插入的形式只能依靠图床，文件夹插入目前宣告失败，base64法延后考察 背景加动态效果，紫色心电图？可以根据浏览器的音频播放产生波动 鼠标的动态效果 阅读进度条 后台记录博文的阅读次数以及阅读者的IP 博文根据年份和月份分区域，参考PaperMod 标题的触发，离开页面标题产生相应变化 标题的触发，离开页面标题产生相应变化
-Welcome to my original sanctum sanctorum. </description>
-    </item>
-    
-    <item>
-      <title>🟪Image Test</title>
-      <link>https://anmowu.github.io/blog/twice-more/</link>
-      <pubDate>Mon, 11 Sep 2023 14:54:10 +0800</pubDate>
-      
-      <guid>https://anmowu.github.io/blog/twice-more/</guid>
-      <description></description>
     </item>
     
   </channel>
