@@ -2,7 +2,7 @@
 title: "九月总结"
 date: 2023-10-10T14:54:10+08:00
 slug: ""
-description: ""
+description: "再熬夜就真的完了"
 keywords: []
 draft: false
 tags: ["Fall","Tired"]
