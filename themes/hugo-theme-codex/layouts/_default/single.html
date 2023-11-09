@@ -4,11 +4,14 @@
 
 {{ define "main" }}
     {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
+
     
 	
 	<div class="flex-wrapper">
       <div class="post__container">
+	    
         <div class="post">
+		<div id="progress-bar"></div>
           <header class="post__header">
             <h1 id="post__title">{{.Title}}</h1>
             {{ if .Date }}<time datetime="{{ .Date }}" class="post__date">{{ .Date.Format $dateFormat }}</time> {{ end }}
@@ -28,7 +31,6 @@
             {{ partial "social-icons.html" .}}
             <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
           </footer>
-		  
           </div>
       </div>
       {{ if .Params.toc }}
@@ -42,6 +44,7 @@
 {{ end }} 
 
 {{ define "scripts" }}
+  <script src="/js/progress-bar.js"></script>
   {{/* Hardcode a specific prismjs version to avoid a redirect on every page load. */}}
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
 

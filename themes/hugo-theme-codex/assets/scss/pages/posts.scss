@@ -37,7 +37,7 @@
 
 .tag__link {
   text-decoration: none;
-  color: #9013fe;
+  color: $darkPurple;
   font-size: 1.1rem;
 
   &::before {
@@ -47,7 +47,7 @@
   }
 
   &:hover {
-    color: $darkGrey;
+    color: rgba(84,15,144,0.44);
   }
 }
 
@@ -56,3 +56,6 @@
   display: flex;
   justify-content: space-between;
 }
+
+
+

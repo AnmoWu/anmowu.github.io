@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year} Anmo</copyright>
-    <lastBuildDate>Tue, 10 Oct 2023 14:54:10 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Nov 2023 14:54:10 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>十月总结</title>
+      <link>https://anmowu.github.io/life/octoberfor2023/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:10 +0800</pubDate>
+      
+      <guid>https://anmowu.github.io/life/octoberfor2023/</guid>
+      <description>每次都写着写着就开始改scss&amp;hellip;不是，为啥啊？一开F12就出现，关掉又没了，什么灵异事件。
+离上次总结也没过多久&amp;hellip;
+最强烈的感受，是什么也没做。或者进程中断/热情熄灭？按照我思维的一贯结果，最终归因于生活中的冲突减少了——也就是黄灯的战或逃状态减少了，而不论是绿灯还是红灯、安全还是麻痹，都可以参考前两年的状态：把时间打碎进行肤浅的娱乐麻醉。
+或者不能这么说吗？因为大环境的压力，学业失败、就业焦虑的影响由于毕业的逼近越来越重了。
+一通乱改！背景还是不满意，有布局问题。</description>
+    </item>
+    
     <item>
       <title>九月总结</title>
       <link>https://anmowu.github.io/life/septemberfor2023/</link>
@@ -24,7 +37,8 @@
 最近会常常闪过太迟的感慨，与人谈起总被问：后悔吗？
 敢说没有后悔吗？
 我历经过最后悔的时刻，高三的每个夜晚躺在床上紧抱膝盖喃喃念着回到过去的重启咒语和盼望出现某个人来拯救我的天真祈愿，它们和高一时脚痛而失眠的感受在过后的每一次查询或报错信息中再次加工，那就是记忆鲜明的浑浊的后悔刻印，对后悔概念的实体化和惯用的衡量标尺。与之相比，如今后悔的感受已经能被自动化剥落、隔离、忽略。它无时无刻不在生产，简直是我呼出的二氧化碳，不在一种密闭的严厉心灵拷问或持续堕落后的高浓度下，却难以致死。
-况且我不是正在行动了嘛！刚好补足最后一个新闻板块——环境——减少碳排放，从我做起。 可是依然拖延了&amp;hellip;有总结想法是9.20，写关键词是9.22，结果还是10.9才动笔（键盘）。
+况且我不是正在行动了嘛！刚好补足最后一个新闻板块——环境——减少碳排放，从我做起。
+可是依然拖延了&amp;hellip;有总结想法是9.20，写关键词是9.22，结果还是10.9才动笔（键盘）。
 不过也好，最近总留意捕获天使数字，刚好凑一个10.10发布。
 阅读 先从轻松易写的地方开始吧。这个月久违下载了很多书，总计三十本，其中八本是工具书，十五本是从学霸猫的豆瓣书单中挑选，以及由它衍生出的三本灵修相关书籍。
 学霸猫涉及的领域也可以简单概括，首先是最吸引眼球的“女性成长”类书籍，书名类似 《日本貴婦教妳75天嫁入豪門》《当个令人上瘾的女人（而不是谁的另一半）》《小姐变女神》，让人避之不及（？）又会燃起别样的兴趣，让我想起十年前玛丝菲尔杂志那一本令我印象深刻的“狐狸精修炼三阶段”版面。
@@ -66,7 +80,7 @@
       <description>第一篇博客，还没部署到服务器上，搭建好主题就写的。
 不怎么复杂，只觉得迟。
 这里记录框架使用中遇见的问题和想法：
-标签不可以加emoji，在blogs界面样式太难看，把计数做成指数样式 description不显示 cover不显示 音乐播放器 slug、keyword、toc、math分别有什么用？ Markdown转HTML不兼容checkbox，需要重写css加入加入样式 图片插入的形式只能依靠图床，文件夹插入目前宣告失败，base64法延后考察 背景加动态效果，紫色心电图？可以根据浏览器的音频播放产生波动 鼠标的动态效果 阅读进度条 后台记录博文的阅读次数以及阅读者的IP 博文根据年份和月份分区域，参考PaperMod 标题的触发，离开页面标题产生相应变化 标题的触发，离开页面标题产生相应变化
+标签不可以加emoji，在blogs界面样式太难看，把计数做成指数样式 description不显示 cover不显示 音乐播放器 slug、keyword、toc、math分别有什么用？ * Markdown转HTML不兼容checkbox，需要重写css加入加入样式 图片插入的形式只能依靠图床，文件夹插入目前宣告失败，base64法延后考察 * 背景加动态效果，紫色心电图？可以根据浏览器的音频播放产生波动 鼠标的动态效果 * 阅读进度条 * 后台记录博文的阅读次数以及阅读者的IP 博文根据年份和月份分区域，参考PaperMod 标题的触发，离开页面标题产生相应变化 标题的触发，离开页面标题产生相应变化
 Welcome to my original sanctum sanctorum. </description>
     </item>
     

@@ -1,11 +1,8 @@
 {{ define "styles" }}
     {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/posts.scss" "dest" "css/posts.css") }}
 {{ end }}
-
 {{ define "main" }}
-    
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
-
 <div class="post-list__container">
   <ul class="post-list">
     {{ range .Pages }}
@@ -15,13 +12,21 @@
           >{{ .Date.Format $dateFormat }}</time>
         <h2 class="post__title">
           <a href="{{.RelPermalink}}">{{ .Title }}</a>
-        </h2>
+        </h2>		
         {{ partial "tags.html" .}}
       </div>
+	  
     </li>
     {{ end }}
+	
   </ul>
+  <!--
+  <div style="width:600px;height:500px;">
+  <canvas style="width:600px;height:700px;"></canvas>
+  <script src="/js/circle-min.js"></script>
+  </div>
+  -->
   {{ partial "browse-by-tag.html" .}}
+  
 </div>
-
 {{ end }}

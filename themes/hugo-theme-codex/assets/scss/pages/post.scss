@@ -17,6 +17,7 @@ $tocBreakpoint: 1024px;
   width: 100%;
   max-width: 43rem;
   margin: 0 auto;
+  border-color: $darkPurple;
 
   h2,
   h3 {
@@ -28,13 +29,13 @@ $tocBreakpoint: 1024px;
       text-decoration: none;
       position: absolute;
       left: -1rem;
-      color: $grey;
+      color: $lightPurple;
       font-size: 1.2rem;
       font-weight: 400;
     }
 
     .anchor:hover {
-      color: $darkGrey;
+      color: $darkPurple;
     }
   }
 
@@ -51,9 +52,9 @@ $tocBreakpoint: 1024px;
 
   img {
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
     display: block;
+	box-shadow: 12px 12px 2px 1px rgba(144, 18, 255, .2);
   }
 }
 
@@ -72,9 +73,13 @@ $tocBreakpoint: 1024px;
 }
 
 .toc-container {
+  border-style: solid; /* 设置边框样式为实线 */
+  border-width: 0 0 0 5px; /* 设置边框宽度 */
+  border-color: $darkPurple;
   position: sticky;
   align-self: start;
-  top: 3rem;
+  top: 3.8rem;
+  right: 9rem;
   max-width: 350px;
 
   @media screen and (max-width: $tocBreakpoint) {
@@ -90,17 +95,17 @@ $tocBreakpoint: 1024px;
 #TableOfContents {
   ul {
     list-style: none;
-    margin: 0;
+    margin: 3px;
   }
 
   a {
     text-decoration: none;
-    color: #9b9b9b;
-    font-size: 0.9rem;
+    color: $lightPurple;
+    font-size: 1.1rem;
   }
 
   a.active {
-    color: rgb(51, 51, 51);
+    color: $darkPurple;
   }
 }
 
@@ -238,4 +243,20 @@ table {
     padding: 0.5em 1em;
     border: 1px double $greyTableBorder;
   }
+}
+
+canvas {
+  width:100%;
+  height:300px;
+  z-index: 100;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, $purePurple, 60%, $darkPurple);
+    z-index: 1000;
 }

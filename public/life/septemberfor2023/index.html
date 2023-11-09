@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.fdb8041333758da4a711a3b82e55979d98113221249e11e8dd702466c007c249.css" integrity="sha256-/bgEEzN1jaSnEaO4LlWXnZgRMiEknhHo3XAkZsAHwkk="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.bcedf0babf8c293f09b0f1e7671e6ca3309fdb95dc501c9a6d927c60a4bb5025.css" integrity="sha256-vO3wur&#43;MKT8JsPHnZx5sozCf25XcUByabZJ8YKS7UCU="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -63,6 +63,7 @@
 </head>
 
 <body>
+  
   <div class="burger__container">
   <div class="burger" aria-controls="navigation" aria-label="Menu">
     <div class="burger__meat burger__meat--1"></div>
@@ -92,15 +93,23 @@
   </ul>
 </nav>
 
+<script src="/js/love-min.js"></script>
+
+
+
+
 
   <main>
     
     
+
     
 	
 	<div class="flex-wrapper">
       <div class="post__container">
+	    
         <div class="post">
+		<div id="progress-bar"></div>
           <header class="post__header">
             <h1 id="post__title">九月总结</h1>
             <time datetime="2023-10-10 14:54:10 &#43;0800 CST" class="post__date">Oct 10 2023</time> 
@@ -118,8 +127,8 @@
 <p>最近会常常闪过太迟的感慨，与人谈起总被问：后悔吗？</p>
 <p>敢说没有后悔吗？</p>
 <p>我历经过最后悔的时刻，高三的每个夜晚躺在床上紧抱膝盖喃喃念着回到过去的重启咒语和盼望出现某个人来拯救我的天真祈愿，它们和高一时脚痛而失眠的感受在过后的每一次查询或报错信息中再次加工，那就是记忆鲜明的浑浊的后悔刻印，对后悔概念的实体化和惯用的衡量标尺。与之相比，如今后悔的感受已经能被自动化剥落、隔离、忽略。它无时无刻不在生产，简直是我呼出的二氧化碳，不在一种密闭的严厉心灵拷问或持续堕落后的高浓度下，却难以致死。</p>
-<p>况且我不是正在行动了嘛！刚好补足最后一个新闻板块——环境——减少碳排放，从我做起。
-可是依然拖延了&hellip;有总结想法是9.20，写关键词是9.22，结果还是10.9才动笔（键盘）。</p>
+<p>况且我不是正在行动了嘛！刚好补足最后一个新闻板块——环境——减少碳排放，从我做起。</p>
+<p>可是依然拖延了&hellip;有总结想法是9.20，写关键词是9.22，结果还是10.9才动笔（键盘）。</p>
 <p><del>不过也好，最近总留意捕获天使数字，刚好凑一个10.10发布。</del></p>
 <h2 id="阅读">阅读<a class="anchor" href="#阅读">#</a></h2>
 <p>先从轻松易写的地方开始吧。这个月久违下载了很多书，总计三十本，其中八本是工具书，十五本是从学霸猫的豆瓣书单中挑选，以及由它衍生出的三本灵修相关书籍。</p>
@@ -205,6 +214,11 @@
   
 
   
+    <a class="pagination__item" href="https://anmowu.github.io/life/octoberfor2023/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >十月总结</span>
+    </a>
+  
 </div>
 
           
@@ -258,8 +272,18 @@
 
             <p>© 2023 Anmo</p>
           </footer>
-		  
           </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#阅读">阅读</a></li>
+    <li><a href="#社交--心理">社交 &amp; 心理</a></li>
+    <li><a href="#学校">学校</a></li>
+  </ul>
+</nav>
       </div>
       
     </div>
@@ -272,6 +296,7 @@
   
   <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
   
+  <script src="/js/progress-bar.js"></script>
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
 
@@ -280,8 +305,12 @@
     data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
 
   
+    <script src="/js/table-of-contents.js"></script>
+  
 
 
+  
+  
 </body>
 
 </html>

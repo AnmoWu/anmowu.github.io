@@ -10,12 +10,14 @@
   background: $white;
   visibility: hidden;
   z-index: 1;
+  top:2em;
+  
+  
 
   @media screen and (min-width: $medium) {
     display: block;
     visibility: visible;
-    padding-top: 3em;
-    width: $navWidth;
+    width: $navWidth+40px;
   }
 }
 
@@ -32,9 +34,8 @@
 .nav__list {
   text-align: right;
   list-style: none;
-  margin: 0;
   padding: 0;
-  width: 50%;
+  width: 0%;
 
   @media screen and (min-width: $medium) {
     width: auto;
