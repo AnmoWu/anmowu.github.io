@@ -57,6 +57,7 @@ p {
   margin-top: $leading;
   margin-bottom: 0;
   line-height: $leading;
+  font-size: ($scale / 1.53) * 1rem;
 }
 
 ul,

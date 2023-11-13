@@ -18,4 +18,11 @@ function initBurger() {
 
 initBurger();
 
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = '不要打喷嚏🤧';
+    } else document.title = normal_title;
+});
+
 

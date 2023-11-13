@@ -48,7 +48,7 @@ function(e, t, a) {
     function s() {
         return randomColor(colors)
     }
-	var colors = ["rgba(84,15,144,0.7)", "rgba(84,15,144,0.44)", "rgba(84,15,144,1)"];
+	var colors = ["rgba(255,200,61,0.44)", "rgba(84,15,144,0.44)", "rgba(84,15,144,1)", "rgba(89,199,217,0.44)"];
     function randomColor(colors) {
         return colors[Math.floor(Math.random() * colors.length)];
     }

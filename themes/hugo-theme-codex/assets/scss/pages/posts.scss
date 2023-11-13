@@ -13,13 +13,12 @@
 }
 
 .post__header .tags__list {
+  padding-top: 3px;
   display: none;
   padding-left: 0;
-  
+  display: block;
 
-  @media screen and (max-width: $medium - 1) {
-    display: block;
-  }
+
 
   .tag__item {
     display: inline-block;
@@ -37,11 +36,12 @@
 
 .tag__link {
   text-decoration: none;
-  color: $darkPurple;
+  color: $lightPurple;
   font-size: 1.1rem;
 
   &::before {
     content: "#";
+	color: $darkPurple;
     font-size: 0.9rem;
     padding-right: 3px;
   }

@@ -11,13 +11,14 @@
   visibility: hidden;
   z-index: 1;
   top:2em;
+  /*padding-left: 50px;*/
   
   
 
   @media screen and (min-width: $medium) {
     display: block;
     visibility: visible;
-    width: $navWidth+40px;
+    width: $navWidth + 40px;
   }
 }
 
@@ -35,7 +36,6 @@
   text-align: right;
   list-style: none;
   padding: 0;
-  width: 0%;
 
   @media screen and (min-width: $medium) {
     width: auto;
@@ -68,7 +68,9 @@
 .nav__list a {
   color: $grey;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.3em;
+  width:100px;
+  
 
   &.active {
     color: $black;
