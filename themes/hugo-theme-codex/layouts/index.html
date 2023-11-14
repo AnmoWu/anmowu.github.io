@@ -6,6 +6,7 @@
 
 <div class="splash-container">
   <div class="splash">
+    <p style="font-size:0.8rem;color:#9b9b9b;"><span id="qiushaocloud_sitecounter_value_site_uv"></span>&nbsp;visitors</p>
     <h1>{{ .Params.heading }}<span class="fancy">.</span></h1>
     {{ if isset .Params "handle" }}
     <span class="handle">@{{ .Params.handle }}</span>
@@ -14,10 +15,10 @@
       {{ .Params.subheading }}
     </h2>
     <!-- Replace MEEEEE -->
-
+    
     {{ partial "social-icons.html" .}}
   </div>
 </div>
 
-
+<script async src="//githubcdn.qiushaocloud.top/gh/qiushaocloud/site-counter@master/dist/qiushaocloud_site_counter.min.js"></script>
 {{ end }}

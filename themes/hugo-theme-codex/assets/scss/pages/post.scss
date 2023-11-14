@@ -14,10 +14,12 @@ $tocBreakpoint: 1024px;
 }
 
 .post {
+  position: static;
   width: 100%;
   max-width: 43rem;
   margin: 0 auto;
   border-color: $darkPurple;
+  z-index: -3;
 
   h2,
   h3 {
@@ -179,7 +181,9 @@ $tocBreakpoint: 1024px;
       margin-top: 0;
     }
     &:hover {
-      background-color: #f6f9fc;
+      /*background-color: #f6f9fc;*/
+	  background-color: rgba(84,15,144,.07);
+
     }
   }
 }
@@ -245,18 +249,4 @@ table {
   }
 }
 
-canvas {
-  width:100%;
-  height:300px;
-  z-index: 100;
-}
 
-#progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(to right, $purePurple, 60%, $darkPurple);
-    z-index: 1000;
-}

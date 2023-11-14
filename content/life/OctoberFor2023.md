@@ -11,9 +11,10 @@ toc: true
 ---
 
 
-<p style="text-align:center">
+<p class="music">
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1381937487&auto=1&height=66">
 </iframe></p>
+<p style="text-align:center; color:#9b9b9b; font-size:0.8rem; margin-top:0.5rem;">丑丑的，很安心</p>
 
 离上次总结也没过多久...
 
@@ -21,7 +22,7 @@ toc: true
 
 或者不能这么说吗？因为大环境的压力，学业失败、就业焦虑的影响由于毕业的逼近越来越重了。
 
-> 每次都写着写着就开始改scss...不是，为啥啊？一开F12就backquote出现，关掉又没了，什么灵异事件。——啊！原来是z-index的问题...
+每次都写着写着就开始改scss...不是，为啥啊？一开F12就backquote出现，关掉又没了，什么灵异事件。——啊！原来是z-index的问题...
 
 一通乱改！背景还是不满意，有布局问题。
 
@@ -57,7 +58,7 @@ toc: true
 其实感觉身体的每个器官（？）都有随时爆雷的风险。
 特别是暑假里检查的脚，没时间做为期一周的各种检查，回来买的“医疗器械”也实在坚持不了长期使用，真的太麻烦了！
 
-最近集中看医生UP主的医疗剧reaction, 连梦的内容都收到影响了。什么时候才会重视起来采取行动呢？入职的体检出现严重警告？
+最近集中看医生UP主的医疗剧reaction, 连梦的内容都受到影响了。什么时候才会重视起来采取行动呢？入职的体检出现严重警告？
 
 哎呀。
 
