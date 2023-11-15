@@ -77,7 +77,7 @@ toc: true
 这方面， **《雪国列车》** 似乎可以作为补充资料，同样是穷人分区上供+富人娱乐至死的设定，视觉体验也不错。
 我似乎特别喜欢新奇、魔幻、庞大但严谨有逻辑的世界观，比如哈利波特、魔戒、DND、饥饿游戏、进击的巨人、三体、诡秘之主、第一序列...当然，它们并没有任何一个能完全达到我所有的期望，仅凭一个人构建历史、描述现在、编撰未来是太难太难的事。于是，把目光投向古代穿越——在既定的历史中凭借相对的未来创造全新的秩序，对心力和笔力的考验都更小一些。
 
-<p><iframe class="video" src="//player.bilibili.com/player.html?aid=925748983&bvid=BV1rT4y1u72v&cid=189735455&p=0&autoplay=0&high_quality=1"> </iframe>
+<p><iframe class="fuck" src="//player.bilibili.com/player.html?aid=925748983&bvid=BV1rT4y1u72v&cid=189735455&p=0&autoplay=0&high_quality=1"> </iframe>
 
 啊呀，读后感的后续还是搁置吧，回到总结的大道上。
 
@@ -104,7 +104,7 @@ toc: true
 现在探索了情人大道（？）两侧半荒废的小公园后——很可惜当时买的莫斯半球。要是提早发现，死的就是这里的金鱼藻和黄花水龙，而不是远道而来的你了。或者延后时间线，我也会把你放归这里，而不是在锥形玻璃罐里干渴而亡...忏悔！
 
 <p>
-<div style="font-family:仿宋; font-size:17px; color: #FFD700; background-color: #000000; height: 170px" align="center">
+<div style="font-family:仿宋; color: #FFD700; background-color: #000000; height: 170px" align="center">
 <div style="height:100%;"><br>南无阿弥多婆夜 哆他伽多夜
 <br>哆地夜他 阿弥唎都婆毗
 <br>阿弥唎哆 悉耽婆毗
