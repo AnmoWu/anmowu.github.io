@@ -19,7 +19,7 @@ iframe.fuck {
   overflow: hidden;
 	
   @media screen and (min-width: 850px) {
-    height: 600px;
+    height: 550px;
   }
     
     
@@ -45,4 +45,46 @@ p.music{
 
 img {
   border-radius: 10px;
+}
+
+.btn {
+    border-radius: 31px;
+    width: 51px;
+    height: 31px;
+    background-color: $greyTableBorder;
+}
+.darkmode {
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    transition: all 100ms;
+    @extend .btn;
+    &::before {
+        position: absolute;
+        content: "";
+        transition: all 300ms cubic-bezier(.45, 1, .4, 1);
+        @extend .btn;
+    }
+    &::after {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        border-radius: 13px;
+        width: 27.5px;
+        height: 27.5px;
+        background-color: #fff;
+		background-image:url("/dark.png");
+        box-shadow: 1px 1px 5px rgba(#000, .3);
+        content: "";
+        transition: all 300ms cubic-bezier(.4, .4, .25, 1.35);
+    }
+    &:checked {
+        background-color: $primary;
+        &::before {
+            transform: scale(0);
+        }
+        &::after {
+            transform: translateX(20px);
+        }
+    }
 }

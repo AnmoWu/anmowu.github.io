@@ -1,61 +1,47 @@
-!
-function(e, t, a) {
-    function n() {
-        c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
-        i(),
-        r()
-    }
-    function r() {
-        for (var e = 0; e < l.length; e++) 
-			l[e].alpha <= 0 ? (t.body.removeChild(l[e].el), l.splice(e, 1)) 
-		                    : (l[e].y--, l[e].scale += .004, l[e].alpha -= .013, 
-							l[e].el.style.cssText = "left:" + l[e].x + "px;top:" 
-							+ l[e].y + "px;opacity:" + l[e].alpha + ";transform:scale("
-							+ l[e].scale + "," + l[e].scale + ") rotate(45deg);background:" 
-							+ l[e].color + ";z-index:99999");
-        requestAnimationFrame(r)
-    }
-    function i() {
-        var t = "function" == typeof e.onclick && e.onclick;
-        e.onclick = function(e) {
-            t && t(),
-            o(e)
-        }
-    }
-    function o(e) {
-        var a = t.createElement("div");
-        a.className = "heart",
-        l.push({
-            el: a,
-            x: e.clientX - 5,
-            y: e.clientY - 5,
-            scale: 1,
-            alpha: 1,
-            color: s()
-        }),
-        t.body.appendChild(a)
-    }
-    function c(e) {
-        var a = t.createElement("style");
-        a.type = "text/css";
-        try {
-            a.appendChild(t.createTextNode(e))
-        } catch(t) {
-            a.styleSheet.cssText = e
-        }
-        t.getElementsByTagName("head")[0].appendChild(a)
-    }
-    function s() {
-        return "rgba(84,15,144,1)"
-    }
-    var l = [];
-    e.requestAnimationFrame = e.requestAnimationFrame
-	|| e.webkitRequestAnimationFrame 
-	|| e.mozRequestAnimationFrame 
-	|| e.oRequestAnimationFrame 
-	|| e.msRequestAnimationFrame ||
-    function(e) {
-        setTimeout(e, 1e3 / 60)
-    },
-    n()
-} (window, document);
+// 创建一个 style 标签
+var style = document.createElement("style");
+// 设置 style 标签的内容为 CSS 代码
+style.innerHTML = `
+  :not(.music,.tag_link){
+    background-color: rgba(130, 114, 144, 1) ;
+    color: white !important;
+  }
+ `;
+// 获取网页的 head 元素
+var head = document.head;
+var toggle = document.getElementById("darkToggle");
+
+function toggleDarkMode() {
+   // 如果开关按钮被选中，就将 html 元素的 filter 样式设置为 brightness(85%)
+  if (toggle.checked) {
+    // 将 style 标签插入到 head 中
+    head.appendChild(style);
+	document.documentElement.style.filter = "brightness(85%)";
+	// 使用 localStorage 保存按钮的状态为 "checked"
+    localStorage.setItem("toggleStatus", "checked");
+  }
+  else {
+	//恢复原状，我应该写什么代码？
+	head.removeChild(style);
+	document.documentElement.style.filter = "none";
+	// 使用 localStorage 保存按钮的状态为 "unchecked"
+    localStorage.setItem("toggleStatus", "unchecked");
+  }
+}
+
+// 给开关按钮添加一个事件监听器，用于在用户点击时调用 toggleDarkMode 函数
+toggle.addEventListener("click", toggleDarkMode);
+
+// 在页面加载时，获取 localStorage 中保存的按钮状态
+var status = localStorage.getItem("toggleStatus");
+
+// 如果状态为 "checked"，就设置按钮的 checked 属性为 true，并调用 toggleDarkMode 函数
+if (status == "checked") {
+  toggle.checked = true;
+  toggleDarkMode();
+}
+// 如果状态为 "unchecked"，就设置按钮的 checked 属性为 false，并调用 toggleDarkMode 函数
+else if (status == "unchecked") {
+  toggle.checked = false;
+  toggleDarkMode();
+}

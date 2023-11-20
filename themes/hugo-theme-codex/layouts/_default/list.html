@@ -2,7 +2,7 @@
     {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/posts.scss" "dest" "css/posts.css") }}
 {{ end }}
 {{ define "main" }}
-{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}  
 <div class="post-list__container">
   <ul class="post-list">
     {{ range .Pages }}
@@ -19,6 +19,7 @@
     {{ end }}
 	
   </ul>
+  
   <!--
   <div style="width:600px;height:500px;">
   <canvas style="width:600px;height:700px;"></canvas>
@@ -28,4 +29,5 @@
   {{ partial "browse-by-tag.html" .}}
   
 </div>
+
 {{ end }}

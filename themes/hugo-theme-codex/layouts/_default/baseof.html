@@ -49,6 +49,9 @@
 </head>
 
 <body>
+  <div style="position: fixed; right: 23px; bottom: 23px;">
+    <input class="darkmode" type="checkbox" id="darkToggle" onchange="toggleDarkMode()">
+  </div>
   
   {{ partial "burger.html" .}} 
 
@@ -59,12 +62,12 @@
 	
 	{{ end }}
   </main>
-
   {{ block "footer" . }} {{ end }}
 
   {{ $script := resources.Get "js/index.js" | minify | fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity | safeHTMLAttr }}" crossorigin="anonymous"></script>
   {{ block "scripts" . }} {{ end }}
+  <script src="/js/test.js"></script>
   
   
 </body>

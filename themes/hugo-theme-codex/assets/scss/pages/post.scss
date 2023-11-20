@@ -133,12 +133,12 @@ $tocBreakpoint: 1024px;
   text-decoration: none;
   padding: 0.2em 0.4em;
   border-radius: 3px;
-  background: lighten($primary, 41%);
+  background: $bgPurple;
   color: $primary;
   font-size: 0.8rem;
 
   &:hover {
-    background: lighten($primary, 38%);
+    background: $lightPurple;
   }
 }
 
@@ -154,6 +154,7 @@ $tocBreakpoint: 1024px;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
+  
 
   @media screen and (min-width: 600px) {
     flex-direction: row;
@@ -182,7 +183,7 @@ $tocBreakpoint: 1024px;
     }
     &:hover {
       /*background-color: #f6f9fc;*/
-	  background-color: rgba(84,15,144,.07);
+	  background-color: $lightPurple;
 
     }
   }
@@ -190,10 +191,12 @@ $tocBreakpoint: 1024px;
 
 .pagination__label {
   color: $grey;
+  background-color:transparent;
   font-size: 0.8rem;
 }
 
 .pagination__title {
+  background-color:transparent;
   color: $black;
   font-weight: 700;
   margin-top: 0.25rem;

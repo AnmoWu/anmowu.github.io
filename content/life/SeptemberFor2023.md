@@ -104,14 +104,14 @@ toc: true
 现在探索了情人大道（？）两侧半荒废的小公园后——很可惜当时买的莫斯半球。要是提早发现，死的就是这里的金鱼藻和黄花水龙，而不是远道而来的你了。或者延后时间线，我也会把你放归这里，而不是在锥形玻璃罐里干渴而亡...忏悔！
 
 <p>
-<div style="font-family:仿宋; color: #FFD700; background-color: #000000; height: 170px" align="center">
-<div style="height:100%;"><br>南无阿弥多婆夜 哆他伽多夜
+<div style="font-family:仿宋; color: #FFD700; background-color: #000000; " align="center">
+南无阿弥多婆夜 哆他伽多夜
 <br>哆地夜他 阿弥唎都婆毗
 <br>阿弥唎哆 悉耽婆毗
 <br>阿弥唎哆 毗迦兰帝
 <br>阿弥唎哆 毗迦兰多
 <br>伽弥腻 伽伽那
-<br>枳多迦唎 娑婆诃</div>
+<br>枳多迦唎 娑婆诃
 </div><br>
 
 
