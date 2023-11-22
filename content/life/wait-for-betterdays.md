@@ -6,7 +6,7 @@ description: ""
 keywords: []
 draft: false
 tags: ["Crying"]
-math: true
+math: false
 toc: false
 ---
 

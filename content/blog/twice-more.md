@@ -6,7 +6,7 @@ description: ""
 keywords: []
 draft: false
 tags: ["Test"]
-math: true
+math: false
 toc: false
 ---
 
