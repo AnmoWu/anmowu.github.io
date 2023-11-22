@@ -6,7 +6,7 @@ description: "吾起床好杀人"
 keywords: []
 draft: false
 tags: ["Fall","Tired"]
-math: true
+math: false
 toc: true
 ---
 

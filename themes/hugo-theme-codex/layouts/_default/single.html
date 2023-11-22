@@ -1,5 +1,6 @@
 {{ define "styles" }}
-    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/post.scss" "dest" "css/post.css") }}
+    
+	{{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/post.scss" "dest" "css/post.css") }}
 {{ end }}
 
 {{ define "main" }}
@@ -8,6 +9,7 @@
     
 	
 	<div class="flex-wrapper">
+	  
       <div class="post__container">
 	    
         <div class="post">
@@ -48,6 +50,7 @@
 {{ end }} 
 
 {{ define "scripts" }}
+  
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   {{/* Hardcode a specific prismjs version to avoid a redirect on every page load. */}}
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

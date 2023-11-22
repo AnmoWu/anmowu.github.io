@@ -73,7 +73,7 @@ img {
         width: 27.5px;
         height: 27.5px;
         background-color: #fff;
-		background-image:url("/dark.png");
+		/*background-image:url("/dark.png");*/
         box-shadow: 1px 1px 5px rgba(#000, .3);
         content: "";
         transition: all 300ms cubic-bezier(.4, .4, .25, 1.35);
@@ -87,4 +87,14 @@ img {
             transform: translateX(20px);
         }
     }
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, $purePurple, 60%, $darkPurple);
+    z-index: 1000;
 }

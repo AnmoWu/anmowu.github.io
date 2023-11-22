@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+	<!-- require pjax -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+</head>
+<body>
+  <div id="player" bottom="30px">
+    <meting-js server="netease" type="playlist" id="8422168819"
+	fixed="true"  autoplay="false" loop="all" order="random" preload="auto"
+	list-folded="ture" list-max-height="500px" lrc-type="1">
+    </meting-js>
+  </div>
+  <!-- <script>
+    // 对所有链接跳转事件绑定pjax容器container
+	//失败！加载出的界面布局全乱了，和display的flex有关系
+    $(document).pjax('a[target!=_blank]', 'main', {fragment: 'main', timeout:8000})
+  </script> -->
+  <!-- <script>
+    $('body').delegate('a', 'click', function (event) {
+	  event.preventDefault();
+	  $.ajax({
+    		type:'GET',
+    		url:this.href,
+    		success:function(data){
+			data = $(data).find("main").html();
+    			$('main').html(data);
+    		}
+    	});
+	//改变地址栏并添加历史记录
+    	window.history.pushState({url:this.href},null,this.href);
+	});
+  </script> -->
+  
+  </body>
+</html>
+

@@ -22,6 +22,7 @@
   {{ end }}
 
   {{ partial "favicon.html" }}
+  
 
   <!-- Styles -->
   {{ block "styles" . }} {{ end }} <!-- Get "style_opts" variable from "styles" block -->
@@ -45,7 +46,7 @@
       {{ template "_internal/google_analytics_async.html" . }}
   {{- end -}}
   
-  
+ 
 </head>
 
 <body>
@@ -56,18 +57,23 @@
   {{ partial "burger.html" .}} 
 
   {{ partial "nav.html" .}}
-
+  {{ partial "music.html" }}
   <main>
     {{ block "main" . }} 
 	
 	{{ end }}
   </main>
+ 
   {{ block "footer" . }} {{ end }}
-
+  
   {{ $script := resources.Get "js/index.js" | minify | fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity | safeHTMLAttr }}" crossorigin="anonymous"></script>
   {{ block "scripts" . }} {{ end }}
   <script src="/js/test.js"></script>
+  <script src="/js/progress-bar.js"></script>
+    
+
+  
   
   
 </body>
