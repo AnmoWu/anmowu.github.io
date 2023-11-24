@@ -1,7 +1,7 @@
 {{ define "styles" }}
-    
 	{{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/posts.scss" "dest" "css/posts.css") }}
 {{ end }}
+
 {{ define "main" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}  
 <div class="post-list__container">
@@ -30,5 +30,6 @@
   {{ partial "browse-by-tag.html" .}}
   
 </div>
+
 
 {{ end }}

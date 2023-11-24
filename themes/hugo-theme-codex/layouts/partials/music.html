@@ -7,8 +7,8 @@
     <!-- require MetingJS -->
     <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 	<!-- require pjax -->
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+    <script src='https://cdn.bootcdn.net/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script src='https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js'></script>
 	<script>
     	// 隐藏歌词
         function removelrc() {
@@ -30,6 +30,12 @@
     }
     document.addEventListener('DOMNodeInserted', removelrc)
 	</script>
+	<script>
+      // 对所有链接跳转事件绑定pjax容器main
+      //失败！加载出的界面布局全乱了
+      //$(document).pjax('a[target!=_blank]', 'main', {fragment: 'main', timeout:8000})
+    
+	</script> 
 </head>
 <body>
   <div id="player" bottom="30px">
@@ -38,27 +44,6 @@
 	list-folded="ture" list-max-height="400px" lrc-type="0">
     </meting-js>
   </div>
-  <!-- <script>
-    // 对所有链接跳转事件绑定pjax容器container
-	//失败！加载出的界面布局全乱了，和display的flex有关系
-    $(document).pjax('a[target!=_blank]', 'main', {fragment: 'main', timeout:8000})
-  </script> -->
-  <!-- <script>
-    $('body').delegate('a', 'click', function (event) {
-	  event.preventDefault();
-	  $.ajax({
-    		type:'GET',
-    		url:this.href,
-    		success:function(data){
-			data = $(data).find("main").html();
-    			$('main').html(data);
-    		}
-    	});
-	//改变地址栏并添加历史记录
-    	window.history.pushState({url:this.href},null,this.href);
-	});
-  </script> -->
-  
   </body>
 </html>
 

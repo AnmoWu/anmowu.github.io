@@ -25,6 +25,7 @@
   
 
   <!-- Styles -->
+  
   {{ block "styles" . }} {{ end }} <!-- Get "style_opts" variable from "styles" block -->
   {{ $base_styles_opts := .Scratch.Get "style_opts" | default (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
   {{ $custom_styles_opts := (dict "src" "scss/custom.scss" "dest" "css/custom.css") }}
@@ -33,8 +34,10 @@
   
   {{ range (slice $base_styles_opts $custom_styles_opts) }}
     {{ $style := resources.Get .src | resources.ExecuteAsTemplate .dest $current_page | toCSS | minify | fingerprint }}
-    <link type="text/css" rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"/>
+    <link type="text/css" id="shit" rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"/>
   {{ end }}
+  
+
   
   {{ range .AlternativeOutputFormats }} 
   {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.FirstSuffix.Suffix .Permalink $.Site.Title | safeHTML }} 
@@ -45,8 +48,6 @@
   {{- if not .Site.IsServer -}}
       {{ template "_internal/google_analytics_async.html" . }}
   {{- end -}}
-  
- 
 </head>
 
 <body>
@@ -57,7 +58,10 @@
   {{ partial "burger.html" .}} 
 
   {{ partial "nav.html" .}}
+  
   {{ partial "music.html" }}
+
+  
   <main>
     {{ block "main" . }} 
 	
@@ -71,8 +75,8 @@
   {{ block "scripts" . }} {{ end }}
   <script src="/js/test.js"></script>
   <script src="/js/progress-bar.js"></script>
-    
-
+ 
+  
   
   
   
