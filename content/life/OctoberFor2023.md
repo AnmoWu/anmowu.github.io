@@ -8,13 +8,12 @@ draft: false
 tags: ["Fall","Tired"]
 math: false
 toc: true
+audio:
+  type: song
+  id: 509106775
+
 ---
 
-
-<p align="center">
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1381937487&auto=1&height=66">
-</iframe></p>
-<p style="text-align:center; color:#9b9b9b; font-size:0.8rem; margin-top:0.5rem;">丑丑的，很安心</p>
 
 离上次总结也没过多久...
 

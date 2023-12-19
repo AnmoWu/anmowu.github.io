@@ -43,6 +43,11 @@
     <link type="text/css" id="shit" rel="stylesheet" href="/css/custom.min.af2e0fcb6fdb74af7e5eef85f1f99c8edf3609a75729ab0aa1b9111bc466a944.css" integrity="sha256-ry4Py2/bdK9&#43;Xu&#43;F8fmcjt82CadXKasKobkRG8RmqUQ="/>
   
   
+  
+  <script>
+    console.log("$base_styles_opts:", {"dest":"css/tags.css","src":"scss/pages/tags.scss"});
+    console.log("$current_page:",  /* json: error calling MarshalJSON for type *hugolib.pageState: json: unsupported type: func() page.Pages */null );
+  </script>
 
   
    
@@ -110,57 +115,7 @@
 
 
   
-  <!DOCTYPE html>
-<html>
-<head>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
-	
-    <script src='https://cdn.bootcdn.net/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
-    <script src='https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js'></script>
-	<script>
-    	
-        function removelrc() {
-        
-        if (!document.querySelector(".aplayer-icon-lrc"))
-            return;
-        else
-        {
-            
-            document.removeEventListener("DOMNodeInserted",removelrc);
-            
-            setTimeout(function() {
-                
-                document.querySelector(".aplayer-icon-lrc").click();
-            }, 1);
-            console.log("success");
-            return;
-        }
-    }
-    document.addEventListener('DOMNodeInserted', removelrc)
-	</script>
-	<script>
-      
-      
-      
-    
-	</script> 
-</head>
-<body>
-  <div id="player" bottom="30px">
-    <meting-js server="netease" type="playlist" id="8422168819"
-	fixed="true"  autoplay="false" loop="all" order="random" preload="auto"
-	list-folded="ture" list-max-height="400px" lrc-type="0">
-    </meting-js>
-  </div>
-  </body>
-</html>
-
-
-
+  
   
   <main>
     

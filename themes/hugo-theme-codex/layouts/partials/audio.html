@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- require APlayer -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+		<!-- require MetingJS -->
+		<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+		<!-- require pjax -->
+		<script src='https://cdn.bootcdn.net/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+		<script src='https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js'></script>
+		<script>
+			// 隐藏歌词
+			function removelrc() {
+				//检测是否存在歌词按钮
+				if (!document.querySelector(".aplayer-icon-lrc"))
+					return;
+				else {
+					//触发以后立刻移除监听
+					document.removeEventListener("DOMNodeInserted", removelrc);
+					//稍作延时保证触发函数时存在按钮
+					setTimeout(function() {
+						//以触发按钮的方式隐藏歌词，防止在点击显示歌词按钮时需要点击两次才能出现的问题
+						document.querySelector(".aplayer-icon-lrc").click();
+					}, 1);
+					console.log("lyric hide process success");
+					return;
+				}
+			}
+			document.addEventListener('DOMNodeInserted', removelrc)
+		</script>
+
+	</head>
+	<body>
+		<div id="player">
+
+			<meting-js server="netease" 
+			type="{{ .Params.audio.type }}" 
+			id="{{ .Params.audio.id }}" 
+			fixed="true"
+				autoplay="false" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="400px"
+				lrc-type="0" theme="#540f90">
+			</meting-js>
+			<script>
+			console.log("type: {{ .Params.audio.type }}");
+            console.log("id: {{ .Params.audio.id }}");
+            </script>
+		</div>
+	</body>
+</html>

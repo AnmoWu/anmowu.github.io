@@ -37,6 +37,11 @@
     <link type="text/css" id="shit" rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"/>
   {{ end }}
   
+  <!-- Add console output for $base_styles_opts and $current_page -->
+  <script>
+    console.log("$base_styles_opts:", {{ $base_styles_opts}});
+    console.log("$current_page:", {{ $current_page}});
+  </script>
 
   
   {{ range .AlternativeOutputFormats }} 
@@ -59,8 +64,7 @@
 
   {{ partial "nav.html" .}}
   
-  {{ partial "music.html" }}
-
+  
   
   <main>
     {{ block "main" . }} 

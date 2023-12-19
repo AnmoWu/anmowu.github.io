@@ -8,6 +8,11 @@ draft: false
 tags: ["Test","Tired","Summer"]
 math: true
 toc: false
+audio:
+  type: song
+  id: 1404102167
+
+
 ---
 
 **第一篇博客，还没部署到服务器上，搭建好主题就写的。**

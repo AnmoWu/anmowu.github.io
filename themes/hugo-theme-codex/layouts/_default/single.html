@@ -8,6 +8,9 @@
 
     
 	
+   
+
+	
 	<div class="flex-wrapper">
 	  
       <div class="post__container">
@@ -28,6 +31,9 @@
               {{ if or .Params.math .Site.Params.math }}
                   {{ partial "math.html" . }}
               {{ end }}
+			  {{ if or .Params.audio .Site.Params.math }}
+                  {{ partial "audio.html" . }}
+	          {{end}}
           </article>
 		 
           {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
