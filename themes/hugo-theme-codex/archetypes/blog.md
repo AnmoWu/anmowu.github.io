@@ -4,8 +4,11 @@ date: {{ .Date }}
 slug: ""
 description: ""
 keywords: []
-draft: true
+draft: false
 tags: []
 math: false
-toc: false
+toc: true
+audio:
+  type: song
+  id: 
 ---

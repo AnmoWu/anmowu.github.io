@@ -7,6 +7,10 @@ languageCode = "en-us"
 baseURL = "https://anmowu.github.io/"
 copyright = "© {year} Anmo"
 
+# 加入中文字数统计
+hasCJKLanguage = true
+
+
 # Add your Disqus shortname here.
 # disqusShortname = ""
 
@@ -72,6 +76,7 @@ copyright = "© {year} Anmo"
   name = "☂️in life"
   title = "life"
   url = "/life"
+  
 
 
 

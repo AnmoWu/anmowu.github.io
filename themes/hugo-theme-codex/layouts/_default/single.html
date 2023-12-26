@@ -19,13 +19,17 @@
 		<div id="progress-bar"></div>
           <header class="post__header">
             <h1 id="post__title">{{.Title}}</h1>
-            {{ if .Date }}<time datetime="{{ .Date }}" class="post__date">{{ .Date.Format $dateFormat }}</time>
+			{{ if .Date }}<time datetime="{{ .Date }}" class="post__date">{{ .Date.Format $dateFormat }}</time>
 			{{ end }}
-	
-          </header>
-		  <span id="busuanzi_container_page_pv" style="color:#9b9b9b; font-size: 0.8rem;">
-          阅读量<span id="busuanzi_value_page_pv"></span>次
-          </span>
+			<br><span id="busuanzi_container_page_pv" style="color:#9b9b9b; font-size: 0.8rem;">
+            👀 <span id="busuanzi_value_page_pv"></span> times
+
+            </span>
+	        <span style="color:#9b9b9b; font-size: 0.8rem;">&nbsp;&nbsp;🖊️{{.WordCount}} words</span>
+            
+			
+		  </header>
+		  
           <article class="post__content">
               {{ partial "anchored-headings.html" .Content }}
               {{ if or .Params.math .Site.Params.math }}
