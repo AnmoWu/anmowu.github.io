@@ -14,15 +14,13 @@
       "headline" : "{{ .Title }}",
       "description" : "{{ .Description }}",
       "inLanguage" : "en-US",
-	  "image": "/favicon.ico",
+	  
       "author" : {
 	    "type": "Person",
-		"name": "Anmo wanna test"
+		"name": "春江潮水连海平"
 	  },
       "creator" : "{{ .Site.Params.name }}",
       "publisher": "{{ .Site.Params.name }}",
-      "accountablePerson" : "{{ .Site.Params.name }}",
-      "copyrightHolder" : "{{ .Site.Params.name }}",
       "copyrightYear" : "{{ .Date.Format "2023" }}",
       "datePublished": "{{ .Date }}",
       "dateModified" : "{{ .Date }}",
@@ -36,11 +34,13 @@
       "@type": "WebSite", 
       "url": "{{ .Permalink }}",
       "name": "{{ .Title }}",
+	  "image": "/favicon.ico",
       "author": {
         "@type": "Person",
-        "name": "{{ .Site.Params.name }}"
+        "name": "AnmoWu's"
       },
       "description": "{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"
-    }
+      "keywords" : [{{ if isset .Params "keywords" }}{{ range .Params.keywords }}"{{ . }}", {{ end }}{{ end }}"Blog"]
+	}
   {{ end }}
   </script>
