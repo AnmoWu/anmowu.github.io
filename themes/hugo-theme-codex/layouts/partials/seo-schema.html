@@ -10,11 +10,15 @@
             "@id": "{{ .Site.BaseURL }}"
       },
       "articleSection" : "{{ .Section }}",
-      "name" : "{{ .Title }}|Anmo's Test",
+      "name" : "{{ .Title }}",
       "headline" : "{{ .Title }}",
       "description" : "{{ .Description }}",
       "inLanguage" : "en-US",
-      "author" : "{{ .Site.Params.name }}",
+	  "image": "/favicon.ico",
+      "author" : {
+	    "type": "Person",
+		"name": "Anmo wanna test"
+	  },
       "creator" : "{{ .Site.Params.name }}",
       "publisher": "{{ .Site.Params.name }}",
       "accountablePerson" : "{{ .Site.Params.name }}",
