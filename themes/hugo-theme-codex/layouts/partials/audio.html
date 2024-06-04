@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<!-- require APlayer -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-		<script src="/js/Aplayer.min.js"></script>
-		<!-- require MetingJS -->
-		<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
-		<!-- require pjax -->
-		<script src='https://cdn.bootcdn.net/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
-		<script src='https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js'></script>
+        <link rel="stylesheet" href="/css/APlayer.min.css">
+        <script src="/js/APlayer.min.js"></script>
+        <!-- require MetingJS -->
+        <script src="/js/Meting.min.js"></script>
+	    <!-- require pjax -->
+        <script src='https://cdn.bootcdn.net/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+        <script src='https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js'></script>
 		<script>
 			// 隐藏歌词
 			function removelrc() {
@@ -42,8 +42,8 @@
 				lrc-type="0" theme="#540f90">
 			</meting-js>
 			<script>
-			console.log("type: {{ .Params.audio.type }}");
-            console.log("id: {{ .Params.audio.id }}");
+			console.log("type:", {{ .Params.audio.type }});
+            console.log("id: ", {{ .Params.audio.id }});
             </script>
 		</div>
 	</body>

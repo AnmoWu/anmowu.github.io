@@ -34,6 +34,7 @@ toggle.addEventListener("click", toggleDarkMode);
 
 // 在页面加载时，获取 localStorage 中保存的按钮状态
 var status = localStorage.getItem("toggleStatus");
+console.log("暗黑模式开启！")
 
 // 如果状态为 "checked"，就设置按钮的 checked 属性为 true，并调用 toggleDarkMode 函数
 if (status == "checked") {
