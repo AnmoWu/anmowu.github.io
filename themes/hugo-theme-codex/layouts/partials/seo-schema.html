@@ -26,7 +26,8 @@
       "dateModified" : "{{ .Date }}",
       "url" : "{{ .Permalink }}",
       "wordCount" : "{{ .WordCount }}",
-      "keywords" : [{{ if isset .Params "keywords" }}{{ range .Params.keywords }}"{{ . }}", {{ end }}{{ end }}"Blog"]
+      
+
     }
   {{ else }}
     { 
