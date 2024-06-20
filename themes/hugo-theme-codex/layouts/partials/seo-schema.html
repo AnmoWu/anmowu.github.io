@@ -21,7 +21,7 @@
 	  },
       "creator" : "{{ .Site.Params.name }}",
       "publisher": "{{ .Site.Params.name }}",
-      "copyrightYear" : "{{ .Date.Format "2023" }}",
+      "copyrightYear" : "{{ .Date.Format "2024" }}",
       "datePublished": "{{ .Date }}",
       "dateModified" : "{{ .Date }}",
       "url" : "{{ .Permalink }}",
@@ -41,7 +41,7 @@
         "name": "AnmoWu's"
       },
       "description": "{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"
-      "keywords" : [{{ if isset .Params "keywords" }}{{ range .Params.keywords }}"{{ . }}", {{ end }}{{ end }}"Blog"]
+  
 	}
   {{ end }}
   </script>
