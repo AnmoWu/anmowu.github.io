@@ -77,7 +77,7 @@
   {{ $script := resources.Get "js/index.js" | minify | fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity | safeHTMLAttr }}" crossorigin="anonymous"></script>
   {{ block "scripts" . }} {{ end }}
-  <script src="/js/DarkMode.js"></script>
+  <script src="/js/fucknight.js"></script>
   
  
   
