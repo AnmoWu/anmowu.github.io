@@ -2,8 +2,7 @@
 var style = document.createElement("style");
 // 设置 style 标签的内容为 CSS 代码
 style.innerHTML = `
-  :not(.post-list__container):not(.post-list__container *):not(input):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor):not(code)
-  {
+  :not(.post-list__container):not(.post-list__container *):not(input):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor):not(code):not(.aplayer *)  {
     background-color: rgba(130, 114, 144, 1);
     color: white !important;
   }
@@ -20,7 +19,7 @@ function toggleDarkMode() {
     // 将 style 标签插入到 head 中
     if (!head.contains(style)) {
       head.appendChild(style);
-      console.log("why");
+    ;
     }
     document.documentElement.style.filter = "brightness(85%)";
     // 使用 localStorage 保存按钮的状态为 "checked"
@@ -29,7 +28,7 @@ function toggleDarkMode() {
     // 恢复原状
     if (head.contains(style)) {
       head.removeChild(style);
-      console.log("test");
+    
     }
     document.documentElement.style.filter = "none";
     // 使用 localStorage 保存按钮的状态为 "unchecked"
@@ -52,7 +51,7 @@ if (status === "checked") {
 }
 // 如果状态为 "unchecked"，就设置按钮的 checked 属性为 false，并调用 toggleDarkMode 函数
 else if (status === "unchecked") {
-	console.log("NO...")
+	
     toggle.checked = false;
     toggleDarkMode();
 }
