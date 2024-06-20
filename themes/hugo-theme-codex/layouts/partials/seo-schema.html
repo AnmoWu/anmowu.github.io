@@ -1,4 +1,3 @@
-  
 <!-- JSON-LD -->
 <script type="application/ld+json">
   {{ if and (.IsPage) (eq .Section "blog") }}
@@ -6,32 +5,20 @@
       "@context" : "http://schema.org",
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{{ .Site.BaseURL }}"
+        "@type": "WebPage",
+        "@id": "{{ .Site.BaseURL }}"
       },
       "articleSection" : "{{ .Section }}",
-      "name" : "{{ .Title }}|Anmo's Test",
+      "name" : "{{ .Title }} | Anmo's Test",
       "headline" : "{{ .Title }}",
       "description" : "{{ .Description }}",
       "inLanguage" : "en-US",
-<<<<<<< HEAD
-	  
-      "author" : {
-	    "type": "Person",
-		"name": "春江潮水连海平"
-	  },
-=======
       "author" : "{{ .Site.Params.name }}",
->>>>>>> parent of c61dcb8 (seo test1)
-      "creator" : "{{ .Site.Params.name }}",
-      "publisher": "{{ .Site.Params.name }}",
       "copyrightYear" : "{{ .Date.Format "2024" }}",
       "datePublished": "{{ .Date }}",
       "dateModified" : "{{ .Date }}",
       "url" : "{{ .Permalink }}",
-      "wordCount" : "{{ .WordCount }}",
-      
-
+      "wordCount" : "{{ .WordCount }}"
     }
   {{ else }}
     { 
@@ -39,13 +26,12 @@
       "@type": "WebSite", 
       "url": "{{ .Permalink }}",
       "name": "{{ .Title }}",
-	  "image": "/favicon.ico",
+      "image": "/favicon.ico",
       "author": {
         "@type": "Person",
         "name": "AnmoWu's"
       },
       "description": "{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"
-  
-	}
+    }
   {{ end }}
-  </script>
+</script>
