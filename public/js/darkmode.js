@@ -2,7 +2,7 @@
 var style = document.createElement("style");
 // 设置 style 标签的内容为 CSS 代码
 style.innerHTML = `
-  :not(.post-list__container):not(.post-list__container *):not(input):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor)
+  :not(.post-list__container):not(.post-list__container *):not(input):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor):not(code)
   {
     background-color: rgba(130, 114, 144, 1);
     color: white !important;
@@ -56,3 +56,4 @@ else if (status === "unchecked") {
     toggle.checked = false;
     toggleDarkMode();
 }
+// 烦死！！失败的build让我烦死！蚊子去死！

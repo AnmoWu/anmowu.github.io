@@ -10,15 +10,19 @@
             "@id": "{{ .Site.BaseURL }}"
       },
       "articleSection" : "{{ .Section }}",
-      "name" : "{{ .Title }}",
+      "name" : "{{ .Title }}|Anmo's Test",
       "headline" : "{{ .Title }}",
       "description" : "{{ .Description }}",
       "inLanguage" : "en-US",
+<<<<<<< HEAD
 	  
       "author" : {
 	    "type": "Person",
 		"name": "春江潮水连海平"
 	  },
+=======
+      "author" : "{{ .Site.Params.name }}",
+>>>>>>> parent of c61dcb8 (seo test1)
       "creator" : "{{ .Site.Params.name }}",
       "publisher": "{{ .Site.Params.name }}",
       "copyrightYear" : "{{ .Date.Format "2024" }}",
