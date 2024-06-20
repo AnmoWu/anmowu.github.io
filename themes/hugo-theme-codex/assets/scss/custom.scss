@@ -3,6 +3,7 @@
 
 body {
   cursor: url('/demon.png'),auto;
+  
 }
 
 canvas {
@@ -72,7 +73,7 @@ img {
         border-radius: 13px;
         width: 27.5px;
         height: 27.5px;
-        background-color: #fff;
+        background-color: $white;
 		/*background-image:url("/dark.png");*/
         box-shadow: 1px 1px 5px rgba(#000, .3);
         content: "";
@@ -107,4 +108,33 @@ img {
   text-indent: 0;
   text-align: initial;
   text-align-last: initial;
+}
+
+sup {
+  color: $darkPurple;
+  font-size: .8rem;
+
+}
+
+.splash {
+  border-radius: 16px;
+  background-color: rgba(255,255,255,0.7);
+  padding: 50px 80px 50px 80px;
+
+}
+
+.post-list__container {
+  border-radius: 16px;
+  background-color: $white;
+  padding: 50px 80px 50px 80px;
+  box-shadow: 0 0 10px $lightPurple;
+  
+
+}
+
+.toc-container{
+  //border-radius: 16px;
+  background-color: $frosted;
+  padding: 5px 50px 5px 30px;
+
 }

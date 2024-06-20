@@ -38,10 +38,10 @@
   {{ end }}
   
   <!-- Add console output for $base_styles_opts and $current_page -->
-  <script>
+  <!--<script>
     console.log("$base_styles_opts:", {{ $base_styles_opts}});
     console.log("$current_page:", {{ $current_page}});
-  </script>
+  </script>-->
 
   
   {{ range .AlternativeOutputFormats }} 
@@ -56,7 +56,7 @@
 </head>
 
 <body>
-  <div style="position: fixed; right: 23px; bottom: 23px;">
+  <div id="darkMode" style="position: fixed; right: 23px; bottom: 23px;">
     <input class="darkmode" type="checkbox" id="darkToggle" onchange="toggleDarkMode()">
   </div>
   
@@ -77,8 +77,8 @@
   {{ $script := resources.Get "js/index.js" | minify | fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity | safeHTMLAttr }}" crossorigin="anonymous"></script>
   {{ block "scripts" . }} {{ end }}
-  <script src="/js/test.js"></script>
-  <script src="/js/progress-bar.js"></script>
+  <script src="/js/darkMode.js"></script>
+  
  
   
   

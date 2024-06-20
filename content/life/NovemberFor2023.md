@@ -53,7 +53,7 @@ audio:
 
 中文toc跳转失效，一顿搜索
 
-经过[启发](https://github.com/miiiku/hexo-theme-flexblock/issues/43) -> [参考](https://blog.wangriyu.wang/2018/06-Aplayer.html) -> 照猫画虎（请看本地的Aplayer.min.js)）-> 最终解决
+经过[启发](https://github.com/miiiku/hexo-theme-flexblock/issues/43) -> [参考](https://blog.wangriyu.wang/2018/06-Aplayer.html) -> 照猫画虎（请开控制台看本地的APlayer.min.js)）-> 最终解决
 
 
 
