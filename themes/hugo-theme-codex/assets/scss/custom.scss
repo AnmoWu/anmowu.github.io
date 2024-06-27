@@ -1,6 +1,5 @@
 @import "partials/vars";
 
-
 body {
   cursor: url('/demon.png'),auto;
   
@@ -140,4 +139,28 @@ sup {
 
 .aplayer-title{
   color: $black;
+}
+
+#navigation.nav {
+  @media screen and (max-width: $tocBreakpoint) {
+    background-color: $white;
+  }
+}
+
+.darkMode {
+  position: fixed; 
+  right: 23px; 
+  bottom: 23px;
+  background-color: rgba(255,255,255,0.01);
+}
+
+
+.p5Canvas {
+   position: fixed;
+   right: 60px;
+   bottom: 73px;
+   @media screen and (max-width: $tocBreakpoint) {
+    display: none;
+  }
+
 }

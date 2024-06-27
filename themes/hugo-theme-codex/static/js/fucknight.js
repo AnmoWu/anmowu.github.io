@@ -2,19 +2,23 @@
 var style = document.createElement("style");
 // 设置 style 标签的内容为 CSS 代码
 style.innerHTML = `
-  :not(.post-list__container):not(.post-list__container *):not(input):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor):not(code):not(.aplayer *)  {
+  :not(.post-list__container):not(.post-list__container *):not(input):not(.darkMode):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor):not(code):not(.aplayer *):not(.burger *){
     background-color: rgba(130, 114, 144, 1);
     color: white !important;
   }
-  
+  #navigation.nav{
+	background-color: rgba(130, 114, 144, 1);  
+  }
 `;
 
-// 获取网页的 head 元素
+// 获取网页的 head 元素aaaa
 var head = document.head;
 var toggle = document.getElementById("darkToggle");
 
 function toggleDarkMode() {
    // 如果开关按钮被选中，就将 html 元素的 filter 样式设置为 brightness(85%)
+  
+  
   if (toggle.checked) {
     // 将 style 标签插入到 head 中
     if (!head.contains(style)) {
