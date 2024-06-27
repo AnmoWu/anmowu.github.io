@@ -70,7 +70,7 @@
       "datePublished": "2024-06-27 21:40:22 \u002b0800 CST",
       "dateModified" : "2024-06-27 21:40:22 \u002b0800 CST",
       "url" : "https:\/\/anmowu.github.io\/blog\/visualization\/",
-      "wordCount" : "0"
+      "wordCount" : "971"
     }
   
 </script>
@@ -144,13 +144,33 @@
             👀 <span id="busuanzi_value_page_pv"></span> times
 
             </span>
-	        <span style="color:#9b9b9b; font-size: 0.8rem;">&nbsp;🖊️0 words</span>
+	        <span style="color:#9b9b9b; font-size: 0.8rem;">&nbsp;🖊️971 words</span>
             
 			
 		  </header>
 		  
           <article class="post__content">
               
+<h2 id="构思">构思<a class="anchor" href="#构思">#</a></h2>
+<p>由于页面太空荡，就萌生了添加点动态效果的想法。之前试图实现音乐全局播放，但遇到css的硬问题，没法解决，除非舍弃模块化。</p>
+<p>所以改成一页一首或一列表的主题曲，采用MetingJS+APlayer，封装在<code>audio.html</code>里，在页首进行选曲。</p>
+<p>在博客建立之初想要在背景加入心电图式样的音频可视化效果，但经过测试，实际与心电图相差甚远，遂试图加入<code>p5.js</code>或者<code>Processing</code>的码绘效果。</p>
+<h2 id="弯路">弯路<a class="anchor" href="#弯路">#</a></h2>
+<p>根据教程很快写出了本地mp3的<code>p5.js</code>音频可视化，但在MetingJS也就是外链播放源的转接上，走了很多弯路。</p>
+<p>首先，我想到了开发者工具里经常使用的网络-媒体下载mp3的功能，希望捕捉当前外链播放器的api链接或者直接获取mp3。</p>
+<p>现在看来，这一步就不太聪明。且不说模仿外部抓包很难实现，即使获取了，可视化和音乐源的播放也是两个进程，无法精准同步和控制。</p>
+<p>在这里我查询了MetingJS的官方文档，写得很简略，没看懂。于是返回看源代码，做了几个<code>this.aplayer</code>的调用输出测试，发现创建语句存在一定问题，输出为<code>undefined</code>。</p>
+<p>因此修改了<code>Meting.min.js</code>对于APlayer的创建语句，直接单起一行，独立出来。现在看控制台，还能追忆当时混乱的测试输出之情状。</p>
+<p>那么进入下个阶段，一切操作都基于MetingJS已经加载完APlayer相关组件，所以最后要加一个加载完毕的事件触发<code>this.dispatchEvent(new Event('aplayerload'))</code>。</p>
+<p>触发后，防止audio标签的跨域问题，需要修改<code>ap.audio.crossOrigin = &quot;anonymous</code>。</p>
+<p>获取到<code>audioContext</code>后，需要添加<code>audioContext.resume()</code>以避免浏览器因为自动播放禁令无法加载音频内容。</p>
+<p>最后获取音乐源时，设置flag进行单次处理防止反复获取audioContext的冗余操作。</p>
+<p>以上基本是 我走过小小弯路。</p>
+<h2 id="最终效果">最终效果<a class="anchor" href="#最终效果">#</a></h2>
+<p>PC端点击左下角的播放器按钮就可以看见啦！源代码开控制台，<code>Visualization.js</code>。</p>
+<p>注意，此处<code>Meting.min.js</code>和<code>APlayer.min.js</code>都进行了修改。</p>
+<p>之后希望引入更多可视化效果，包括<code>Processing</code>相关，或者做出理想中的心电图样式！</p>
+<p>但其实夜间模式和页面布局的问题还亟待解决呢。</p>
 
 
               
@@ -198,14 +218,14 @@
 
 			<meting-js server="netease" 
 			type="song" 
-			id="1874908429" 
+			id="2107565588" 
 			fixed="true"
 				autoplay="false" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="400px"
 				lrc-type="0" theme="#540f90">
 			</meting-js>
 			<script>
 			console.log("type:", "song");
-            console.log("id: ",  1874908429 );
+            console.log("id: ",  2107565588 );
             </script>
 		</div>
 	</body>
@@ -287,6 +307,17 @@
           </div>
       </div>
       
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#构思">构思</a></li>
+    <li><a href="#弯路">弯路</a></li>
+    <li><a href="#最终效果">最终效果</a></li>
+  </ul>
+</nav>
+      </div>
+      
     </div>
 	
 	<div class="p5Canvas">test<div/>
@@ -309,6 +340,8 @@
   <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
     data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
 
+  
+    <script src="/js/table-of-contents.js"></script>
   
 
 

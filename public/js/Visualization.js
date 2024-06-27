@@ -23,9 +23,9 @@ function draw() {
 		rotateX(44);
 
 		for (var i = 0; i < spectrum.length; i++) {
-			stroke("purple")
-			rotate(7)
-		
+			stroke("rgb(84,15,144)");
+			rotate(7);
+			
 			beginShape()
 			for (var j = 0; j < 360; j += 77) {
 				var rad = spectrum[i] / 7
