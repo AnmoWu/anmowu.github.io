@@ -5,7 +5,7 @@ var want = document.getElementById("darkToggle");
 //let w;
 
 function setup() {
-	createCanvas(300, 400, WEBGL);
+	createCanvas(230, 300, WEBGL);
 	angleMode(DEGREES);
 	stroke(255);
 	//w = width / 64;

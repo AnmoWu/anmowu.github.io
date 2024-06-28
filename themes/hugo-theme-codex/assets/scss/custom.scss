@@ -137,7 +137,7 @@ sup {
 
 .toc-container{
   background-color: $frosted;
-  padding: 5px 50px 5px 30px;
+  padding: 15px 50px 23px 3px;
   border-top-right-radius: 16px;
   //border-bottom-right-radius: 16px;
 
@@ -163,7 +163,7 @@ sup {
 
 .p5Canvas {
    position: fixed;
-   right: 60px;
+   right: 73px;
    bottom: 73px;
    @media screen and (max-width: $tocBreakpoint) {
     display: none;
@@ -194,3 +194,17 @@ sup {
 main {
  height: 100%;
 }
+
+input {
+    -webkit-appearance: button;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+pre::-webkit-scrollbar {
+  display: block; /* 确保显示滚动条 */
+}
+
+

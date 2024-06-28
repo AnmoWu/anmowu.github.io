@@ -2,7 +2,7 @@
 var style = document.createElement("style");
 // 设置 style 标签的内容为 CSS 代码
 style.innerHTML = `
-  :not(.post-list__container):not(.post-list__container *):not(input):not(.darkMode):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor):not(code):not(.aplayer *):not(.burger *){
+  :not(.post-list__container):not(.post-list__container *):not(input):not(pre):not(pre *):not(.darkMode):not(.toc-container):not(.toc-container *):not(ul.tags__list *):not(.anchor):not(code):not(.aplayer *):not(.burger *){
     background-color: rgba(130, 114, 144, 1);
     color: white !important;
   }
