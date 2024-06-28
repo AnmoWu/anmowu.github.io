@@ -178,6 +178,7 @@ sup {
 .post-list {
    //height: calc(100vh - 230px); 
    overflow-y: scroll;
+   scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {

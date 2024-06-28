@@ -49,10 +49,12 @@
   {{ end }} 
   {{ block "links" . }} {{ end }}
   {{ partial "seo-schema.html" .}}
+  
 
   {{- if not .Site.IsServer -}}
       {{ template "_internal/google_analytics_async.html" . }}
   {{- end -}}
+  <meta name="google-site-verification" content="-OTnOSW4EWTYe4QUCBdOjNbGJ5i3FCkL9s9jINT7FV0" />
 </head>
 
 <body>
