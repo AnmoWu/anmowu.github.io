@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year} Anmo</copyright>
-    <lastBuildDate>Thu, 27 Jun 2024 21:40:22 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jun 2024 17:19:22 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Visualization Test</title>
+      <title>MetingJS&#43;p5.js音频可视化</title>
       <link>https://anmowu.github.io/blog/visualization/</link>
-      <pubDate>Thu, 27 Jun 2024 21:40:22 +0800</pubDate>
+      <pubDate>Fri, 28 Jun 2024 17:19:22 +0800</pubDate>
       
       <guid>https://anmowu.github.io/blog/visualization/</guid>
       <description>构思 由于页面太空荡，就萌生了添加点动态效果的想法。之前试图实现音乐全局播放，但遇到css的硬问题，没法解决，除非舍弃模块化。 所以改成一页一首</description>

@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <title>Visualization Test | 🌻Chilling...</title>
+  <title>MetingJS&#43;p5.js音频可视化 | 🌻Chilling...</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -15,7 +15,7 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Visualization Test" />
+  <meta name="twitter:title" content="MetingJS&#43;p5.js音频可视化" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="https://twitter.com/AnmoWu" />
   <meta name="twitter:creator" content="https://twitter.com/AnmoWu" />
@@ -38,10 +38,10 @@
   
   
     
-    <link type="text/css" id="shit" rel="stylesheet" href="/css/post.min.ec638cfd7777717280e71254136604f1878324d0e72455b639056a355a94c7b3.css" integrity="sha256-7GOM/Xd3cXKA5xJUE2YE8YeDJNDnJFW2OQVqNVqUx7M="/>
+    <link type="text/css" id="shit" rel="stylesheet" href="/css/post.min.17bd8b5e62c85da95507669f8be988e62190d552bf242c1743e2a2a63279517d.css" integrity="sha256-F72LXmLIXalVB2afi&#43;mI5iGQ1VK/JCwXQ&#43;KipjJ5UX0="/>
   
     
-    <link type="text/css" id="shit" rel="stylesheet" href="/css/custom.min.40bdffca8e57eb2515d3c00774db8f3ca3db52ff7f61cd942232ae9d61b43ab2.css" integrity="sha256-QL3/yo5X6yUV08AHdNuPPKPbUv9/Yc2UIjKunWG0OrI="/>
+    <link type="text/css" id="shit" rel="stylesheet" href="/css/custom.min.773385f005d3900f8d2960153aa7ebe4c22cb6da0a76aa3304bd631b249001f1.css" integrity="sha256-dzOF8AXTkA&#43;NKWAVOqfr5MIsttoKdqozBL1jGySQAfE="/>
   
   
   
@@ -61,22 +61,23 @@
         "@id": "https:\/\/anmowu.github.io\/"
       },
       "articleSection" : "blog",
-      "name" : "Visualization Test | Anmo's Test",
-      "headline" : "Visualization Test",
+      "name" : "MetingJS\u002bp5.js音频可视化 | Anmo's Test",
+      "headline" : "MetingJS\u002bp5.js音频可视化",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
-      "copyrightYear" : "272740",
-      "datePublished": "2024-06-27 21:40:22 \u002b0800 CST",
-      "dateModified" : "2024-06-27 21:40:22 \u002b0800 CST",
+      "copyrightYear" : "282819",
+      "datePublished": "2024-06-28 17:19:22 \u002b0800 CST",
+      "dateModified" : "2024-06-28 17:19:22 \u002b0800 CST",
       "url" : "https:\/\/anmowu.github.io\/blog\/visualization\/",
-      "wordCount" : "971"
+      "wordCount" : "1065"
     }
   
 </script>
 </head>
 
 <body>
+
   <div id="darkMode" class="darkMode">
     <input class="darkmode" type="checkbox" id="darkToggle" onchange="toggleDarkMode()">
   </div>
@@ -122,6 +123,7 @@
   
   
   <main>
+  
     
     
 
@@ -137,14 +139,14 @@
         <div class="post">
 		<div id="progress-bar"></div>
           <header class="post__header">
-            <h1 id="post__title">Visualization Test</h1>
-			<time datetime="2024-06-27 21:40:22 &#43;0800 CST" class="post__date">Jun 27 2024</time>
+            <h1 id="post__title">MetingJS&#43;p5.js音频可视化</h1>
+			<time datetime="2024-06-28 17:19:22 &#43;0800 CST" class="post__date">Jun 28 2024</time>
 			
 			<br><span id="busuanzi_container_page_pv" style="color:#9b9b9b; font-size: 0.8rem;">
             👀 <span id="busuanzi_value_page_pv"></span> times
 
             </span>
-	        <span style="color:#9b9b9b; font-size: 0.8rem;">&nbsp;🖊️971 words</span>
+	        <span style="color:#9b9b9b; font-size: 0.8rem;">&nbsp;🖊️1065 words</span>
             
 			
 		  </header>
@@ -152,25 +154,26 @@
           <article class="post__content">
               
 <h2 id="构思">构思<a class="anchor" href="#构思">#</a></h2>
-<p>由于页面太空荡，就萌生了添加点动态效果的想法。之前试图实现音乐全局播放，但遇到css的硬问题，没法解决，除非舍弃模块化。</p>
-<p>所以改成一页一首或一列表的主题曲，采用MetingJS+APlayer，封装在<code>audio.html</code>里，在页首进行选曲。</p>
+<p>由于页面太空荡，就萌生了添加点动态效果的想法。之前试图实现音乐全局播放，但遇到css的硬问题，没法解决，除非舍弃模块化。
+所以改成一页一首或一列表的主题曲，采用<code>MetingJS</code>+<code>APlayer</code>，封装在<code>audio.html</code>里，在页首进行选曲。</p>
 <p>在博客建立之初想要在背景加入心电图式样的音频可视化效果，但经过测试，实际与心电图相差甚远，遂试图加入<code>p5.js</code>或者<code>Processing</code>的码绘效果。</p>
 <h2 id="弯路">弯路<a class="anchor" href="#弯路">#</a></h2>
-<p>根据教程很快写出了本地mp3的<code>p5.js</code>音频可视化，但在MetingJS也就是外链播放源的转接上，走了很多弯路。</p>
+<p>根据教程很快写出了本地mp3的p5.js音频可视化，但在MetingJS也就是外链播放源的转接上，走了很多弯路。</p>
 <p>首先，我想到了开发者工具里经常使用的网络-媒体下载mp3的功能，希望捕捉当前外链播放器的api链接或者直接获取mp3。</p>
 <p>现在看来，这一步就不太聪明。且不说模仿外部抓包很难实现，即使获取了，可视化和音乐源的播放也是两个进程，无法精准同步和控制。</p>
 <p>在这里我查询了MetingJS的官方文档，写得很简略，没看懂。于是返回看源代码，做了几个<code>this.aplayer</code>的调用输出测试，发现创建语句存在一定问题，输出为<code>undefined</code>。</p>
 <p>因此修改了<code>Meting.min.js</code>对于APlayer的创建语句，直接单起一行，独立出来。现在看控制台，还能追忆当时混乱的测试输出之情状。</p>
 <p>那么进入下个阶段，一切操作都基于MetingJS已经加载完APlayer相关组件，所以最后要加一个加载完毕的事件触发<code>this.dispatchEvent(new Event('aplayerload'))</code>。</p>
 <p>触发后，防止audio标签的跨域问题，需要修改<code>ap.audio.crossOrigin = &quot;anonymous</code>。</p>
-<p>获取到<code>audioContext</code>后，需要添加<code>audioContext.resume()</code>以避免浏览器因为自动播放禁令无法加载音频内容。</p>
+<p>获取到<code>audioContext</code>后，需要添加<code>audioContext.resume()</code>以避免浏览器因为自动播放禁令无法加载音频内容。
+但是似乎没有什么用，依然时不时报错，不过不影响实际效果。</p>
 <p>最后获取音乐源时，设置flag进行单次处理防止反复获取audioContext的冗余操作。</p>
-<p>以上基本是 我走过小小弯路。</p>
+<p>以上基本是我走过的小小弯路。</p>
 <h2 id="最终效果">最终效果<a class="anchor" href="#最终效果">#</a></h2>
 <p>PC端点击左下角的播放器按钮就可以看见啦！源代码开控制台，<code>Visualization.js</code>。</p>
 <p>注意，此处<code>Meting.min.js</code>和<code>APlayer.min.js</code>都进行了修改。</p>
-<p>之后希望引入更多可视化效果，包括<code>Processing</code>相关，或者做出理想中的心电图样式！</p>
-<p>但其实夜间模式和页面布局的问题还亟待解决呢。</p>
+<p>之后希望引入更多可视化效果，包括Processing相关、perlin noise的海浪波动，以及理想中的心电图样式！</p>
+<p>下一步准备着手文章代码块的添加与美化实现。还有sitemap里这个空categories页面究竟是干嘛的？主题作者能不能回答一下&hellip;</p>
 
 
               
@@ -190,26 +193,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js"></script>
 	    
-		<script>
-			
-			function removelrc() {
-				
-				if (!document.querySelector(".aplayer-icon-lrc"))
-					return;
-				else {
-					
-					document.removeEventListener("DOMNodeInserted", removelrc);
-					
-					setTimeout(function() {
-						
-						document.querySelector(".aplayer-icon-lrc").click();
-					}, 1);
-					console.log("lyric hide process success");
-					return;
-				}
-			}
-			document.addEventListener('DOMNodeInserted', removelrc)
-		</script>
+		
+
 		
 
 	</head>
@@ -230,6 +215,7 @@
 		</div>
 	</body>
 	<script src="/js/Visualization.js"></script>
+	
 </html>
 	          
           </article>
@@ -320,7 +306,7 @@
       
     </div>
 	
-	<div class="p5Canvas">test<div/>
+	
     
 
   </main>

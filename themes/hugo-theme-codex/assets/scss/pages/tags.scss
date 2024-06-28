@@ -2,9 +2,9 @@
 @import "../partials/post-list";
 
 .tag__header {
-  align-items: baseline;
+  //height: 100px;
   display: flex;
-  margin: 0 auto 3rem;
+  margin-bottom: 23px;
 
   a,
   .separator {
@@ -24,5 +24,7 @@
   .tag__term {
     margin: 0;
     font-weight: 600;
+	color: $primary;
   }
 }
+
