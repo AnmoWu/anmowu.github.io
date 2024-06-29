@@ -2,54 +2,40 @@
 <html lang="en-us">
 
 <head>
+  
   <title>MetingJS&#43;p5.js音频可视化 | 🌻Chilling...</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="对MetingJS&#43;p5.js音频可视化的概述">
+  
+    <meta name="keywords" content="MetingJS, p5.js, 音频可视化">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  
-  
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="MetingJS&#43;p5.js音频可视化" />
-  <meta name="twitter:description" content=""/>
-  <meta name="twitter:site" content="https://twitter.com/AnmoWu" />
-  <meta name="twitter:creator" content="https://twitter.com/AnmoWu" />
-  
-
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
-  
 
-  
   
   
     
 	
- 
-  
-  
-  
-  
-  
-  
-    
-    <link type="text/css" id="shit" rel="stylesheet" href="/css/post.min.17bd8b5e62c85da95507669f8be988e62190d552bf242c1743e2a2a63279517d.css" integrity="sha256-F72LXmLIXalVB2afi&#43;mI5iGQ1VK/JCwXQ&#43;KipjJ5UX0="/>
-  
-    
-    <link type="text/css" id="shit" rel="stylesheet" href="/css/custom.min.7ebcb204d2f117bc158a5adfe99f70c3e953614a0a4fc3ac6d45c699ae23f260.css" integrity="sha256-fryyBNLxF7wVilrf6Z9ww&#43;lTYUoKT8OsbUXGma4j8mA="/>
-  
-  
-  
-  
 
   
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.17bd8b5e62c85da95507669f8be988e62190d552bf242c1743e2a2a63279517d.css" integrity="sha256-F72LXmLIXalVB2afi&#43;mI5iGQ1VK/JCwXQ&#43;KipjJ5UX0=" />
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.7ebcb204d2f117bc158a5adfe99f70c3e953614a0a4fc3ac6d45c699ae23f260.css" integrity="sha256-fryyBNLxF7wVilrf6Z9ww&#43;lTYUoKT8OsbUXGma4j8mA=" />
+  
+
    
-   
+  
   
 <script type="application/ld+json">
   
@@ -58,24 +44,33 @@
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https:\/\/anmowu.github.io\/"
+        "@id": "https:\/\/anmowu.github.io\/blog\/visualization\/"
       },
       "articleSection" : "blog",
-      "name" : "MetingJS\u002bp5.js音频可视化 | Anmo's Test",
+      "name" : "MetingJS\u002bp5.js音频可视化 | Anmo\u0027s original sanctum sanctorum.",
       "headline" : "MetingJS\u002bp5.js音频可视化",
-      "description" : "",
-      "inLanguage" : "en-US",
-      "author" : "",
+      "description" : "对MetingJS\u002bp5.js音频可视化的概述",
+      "inLanguage" : "en-us",
+      "author" : {
+        "@type": "Person",
+        "name": "Anmo"
+      },
       "copyrightYear" : "282819",
       "datePublished": "2024-06-28 17:19:22 \u002b0800 CST",
       "dateModified" : "2024-06-28 17:19:22 \u002b0800 CST",
       "url" : "https:\/\/anmowu.github.io\/blog\/visualization\/",
-      "wordCount" : "1065"
+      "wordCount" : "1071"
     }
   
 </script>
-<meta name="google-site-verification" content="-OTnOSW4EWTYe4QUCBdOjNbGJ5i3FCkL9s9jINT7FV0" />
+
+
+  
+    
+  
+  <meta name="google-site-verification" content="-OTnOSW4EWTYe4QUCBdOjNbGJ5i3FCkL9s9jINT7FV0" />
 </head>
+
 
 <body>
 
@@ -147,7 +142,7 @@
             👀 <span id="busuanzi_value_page_pv"></span> times
 
             </span>
-	        <span style="color:#9b9b9b; font-size: 0.8rem;">&nbsp;🖊️1065 words</span>
+	        <span style="color:#9b9b9b; font-size: 0.8rem;">&nbsp;🖊️1071 words</span>
             
 			
 		  </header>
@@ -165,7 +160,7 @@
 <p>在这里我查询了MetingJS的官方文档，写得很简略，没看懂。于是返回看源代码，做了几个<code>this.aplayer</code>的调用输出测试，发现创建语句存在一定问题，输出为<code>undefined</code>。</p>
 <p>因此修改了<code>Meting.min.js</code>对于APlayer的创建语句，直接单起一行，独立出来。现在看控制台，还能追忆当时混乱的测试输出之情状。</p>
 <p>那么进入下个阶段，一切操作都基于MetingJS已经加载完APlayer相关组件，所以最后要加一个加载完毕的事件触发<code>this.dispatchEvent(new Event('aplayerload'))</code>。</p>
-<p>触发后，防止audio标签的跨域问题，需要修改<code>ap.audio.crossOrigin = &quot;anonymous</code>。</p>
+<p>触发后，防止audio标签的跨域问题，需要修改<code>ap.audio.crossOrigin = &quot;anonymous&quot;</code>。</p>
 <p>获取到<code>audioContext</code>后，需要添加<code>audioContext.resume()</code>以避免浏览器因为自动播放禁令无法加载音频内容。
 但是似乎没有什么用，依然时不时报错，不过不影响实际效果。</p>
 <p>最后获取音乐源时，设置flag进行单次处理防止反复获取audioContext的冗余操作。</p>

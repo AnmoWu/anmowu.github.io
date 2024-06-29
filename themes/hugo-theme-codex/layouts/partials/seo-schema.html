@@ -6,17 +6,20 @@
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ .Site.BaseURL }}"
+        "@id": "{{ .Permalink }}"
       },
       "articleSection" : "{{ .Section }}",
-      "name" : "{{ .Title }} | Anmo's Test",
+      "name" : "{{ .Title }} | {{ .Site.Title }}",
       "headline" : "{{ .Title }}",
       "description" : "{{ .Description }}",
-      "inLanguage" : "en-US",
-      "author" : "{{ .Site.Params.name }}",
+      "inLanguage" : "{{ .Site.LanguageCode }}",
+      "author" : {
+        "@type": "Person",
+        "name": "{{ .Site.Params.author }}"
+      },
       "copyrightYear" : "{{ .Date.Format "2024" }}",
       "datePublished": "{{ .Date }}",
-      "dateModified" : "{{ .Date }}",
+      "dateModified" : "{{ .Lastmod }}",
       "url" : "{{ .Permalink }}",
       "wordCount" : "{{ .WordCount }}"
     }
@@ -24,14 +27,14 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "{{ .Permalink }}",
-      "name": "{{ .Title }}",
-      "image": "/flag.png",
+      "url": "{{ .Site.BaseURL }}",
+      "name": "{{ .Site.Title }}",
       "author": {
         "@type": "Person",
-        "name": "AnmoWu's"
+        "name": "{{ .Site.Params.author }}"
       },
-      "description": "{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"
+      "description": "{{ .Site.Params.description }}",
+      "image": "{{ .Site.BaseURL }}flag.png"
     }
   {{ end }}
 </script>

@@ -5,6 +5,11 @@ draft: false
 tags: ["Test"]
 math: false
 toc: true
+keywords: 
+- MetingJS
+- p5.js
+- 音频可视化
+description: "对MetingJS+p5.js音频可视化的概述"
 audio:
   type: song
   id: 2107565588
@@ -31,7 +36,7 @@ audio:
 
 那么进入下个阶段，一切操作都基于MetingJS已经加载完APlayer相关组件，所以最后要加一个加载完毕的事件触发`this.dispatchEvent(new Event('aplayerload'))`。
 
-触发后，防止audio标签的跨域问题，需要修改`ap.audio.crossOrigin = "anonymous`。
+触发后，防止audio标签的跨域问题，需要修改`ap.audio.crossOrigin = "anonymous"`。
 
 获取到`audioContext`后，需要添加`audioContext.resume()`以避免浏览器因为自动播放禁令无法加载音频内容。
 但是似乎没有什么用，依然时不时报错，不过不影响实际效果。
