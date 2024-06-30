@@ -1,9 +1,10 @@
 ---
 title: "New Start🟪"
 date: 2023-09-11T14:54:10+08:00
-slug: ""
-description: "Start"
-keywords: []
+description: "博客的起点🧙🏻‍♀️"
+keywords:
+- Start
+- 功能规划
 draft: false
 tags: ["Test","Tired","Summer"]
 math: false
@@ -11,8 +12,6 @@ toc: true
 audio:
   type: song
   id: 1404102167
-
-
 ---
 
 **第一篇博客，还没部署到服务器上，搭建好主题就写的。**

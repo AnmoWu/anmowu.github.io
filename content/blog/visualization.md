@@ -9,7 +9,7 @@ keywords:
 - MetingJS
 - p5.js
 - 音频可视化
-description: "对MetingJS+p5.js音频可视化的概述"
+description: "对MetingJS+p5.js音频可视化的概述。"
 audio:
   type: song
   id: 2107565588

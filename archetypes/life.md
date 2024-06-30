@@ -1,11 +1,16 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-slug: ""
 description: ""
-keywords: []
+keywords: 
+- Life
+
 draft: false
-tags: []
-math: true
-toc: false
+tags: 
+
+math: false
+toc: true
+audio:
+  type: song
+  id: 
 ---

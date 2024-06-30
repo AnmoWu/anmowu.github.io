@@ -1,9 +1,10 @@
 ---
 title: "十一月总结"
 date: 2023-12-21T08:12:30+08:00
-slug: ""
-description: "12.18雪"
-keywords: []
+description: "12.18，雪。"
+keywords: 
+- 月度总结
+- Snow
 draft: false
 tags: ["Winter","Tired"]
 math: false

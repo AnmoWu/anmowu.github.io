@@ -1,9 +1,11 @@
 ---
 title: "九月总结"
 date: 2023-10-10T14:54:10+08:00
-slug: ""
-description: "再熬夜就真的完了"
-keywords: []
+description: "再熬夜就真的完了..."
+keywords: 
+- 月度总结
+- September
+- Monthly Summary
 draft: false
 tags: ["Fall","Tired"]
 math: true

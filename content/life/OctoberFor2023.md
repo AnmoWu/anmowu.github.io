@@ -2,8 +2,11 @@
 title: "十月总结"
 date: 2023-11-01T14:54:10+08:00
 slug: ""
-description: "吾起床好杀人"
-keywords: []
+description: "吾起床好杀人🗡"
+keywords: 
+- 月度总结
+- Outside
+- Sunset
 draft: false
 tags: ["Fall","Tired"]
 math: false

@@ -1,7 +1,15 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-description: ""
 date: {{ .Date }}
-keywords: []
-draft: true
+description: ""
+keywords: 
+
+draft: false
+tags: 
+
+math: false
+toc: true
+audio:
+  type: song
+  id: 
 ---
