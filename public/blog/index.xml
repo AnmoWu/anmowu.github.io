@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2024 Anmo</copyright>
-    <lastBuildDate>Fri, 28 Jun 2024 17:19:22 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Apr 2025 17:10:54 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Win安装Oracle19c INS-30014 hosts解决方法无效的一种提案</title>
+      <link>https://anmowu.github.io/blog/remote/</link>
+      <pubDate>Thu, 10 Apr 2025 17:10:54 +0800</pubDate>
+      
+      <guid>https://anmowu.github.io/blog/remote/</guid>
+      <description>前情提要 刷到CSDN在无告知无许可的情况下将用户文章转成VIP可见的帖子，赶紧查了一下。 果然我这唯一一篇实质内容还不如Markdown语法含</description>
+    </item>
+    
     <item>
       <title>MetingJS&#43;p5.js音频可视化</title>
       <link>https://anmowu.github.io/blog/visualization/</link>

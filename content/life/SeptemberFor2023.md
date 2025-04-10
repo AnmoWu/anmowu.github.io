@@ -117,7 +117,7 @@ audio:
 <br>阿弥唎哆 毗迦兰多
 <br>伽弥腻 伽伽那
 <br>枳多迦唎 娑婆诃
-</div><br>
+</div>
 
 
 [^1]:感谢[Christine Padesky](https://www.youtube.com/watch?v=4--6hreW2uQ)

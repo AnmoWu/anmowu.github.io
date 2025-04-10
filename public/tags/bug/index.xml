@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bug on Anmo&#39;s original sanctum sanctorum.</title>
+    <link>https://anmowu.github.io/tags/bug/</link>
+    <description>Recent content in bug on Anmo&#39;s original sanctum sanctorum.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2024 Anmo</copyright>
+    <lastBuildDate>Thu, 10 Apr 2025 17:10:54 +0800</lastBuildDate><atom:link href="https://anmowu.github.io/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Win安装Oracle19c INS-30014 hosts解决方法无效的一种提案</title>
+      <link>https://anmowu.github.io/blog/remote/</link>
+      <pubDate>Thu, 10 Apr 2025 17:10:54 +0800</pubDate>
+      
+      <guid>https://anmowu.github.io/blog/remote/</guid>
+      <description>前情提要 刷到CSDN在无告知无许可的情况下将用户文章转成VIP可见的帖子，赶紧查了一下。 果然我这唯一一篇实质内容还不如Markdown语法含</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 title: "歌单梳理 part.1"
 date: 2024-10-19T16:22:13+08:00
-description: ""
+description: "趁着还记得，来梳理一下歌单，首发篇。"
 keywords: 
 - Life
 - Music
