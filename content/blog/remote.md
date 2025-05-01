@@ -7,9 +7,9 @@ keywords:
 - Oracle19c
 draft: false
 tags: 
-- bug
-- archive
-math: true
+- Bug
+- Archive
+math: false
 toc: true
 audio:
   type: song
@@ -28,7 +28,7 @@ audio:
 按步骤安装，但出现以下问题窗口
 
 <p><img src="/img/error2.png" alt="错误">
-<br>
+
 忽略INS-30011，让我们来看解决`INS-30014`的方法
   
 ## 重点
@@ -42,7 +42,7 @@ audio:
 ```
 具体截图如下 
 <p><img src="/img/host2.png" alt="截图">
-<br>
+
 保存文件，进行安装
 
 *个人结果：*
